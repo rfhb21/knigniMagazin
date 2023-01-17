@@ -40,10 +40,8 @@
             this.CapchaGen = new System.Windows.Forms.PictureBox();
             this.Capcha = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapchaGen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,34 +92,32 @@
             // 
             // Reg
             // 
-            this.Reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(199)))), ((int)(((byte)(63)))));
             this.Reg.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Reg.Location = new System.Drawing.Point(238, 348);
             this.Reg.Name = "Reg";
             this.Reg.Size = new System.Drawing.Size(163, 33);
             this.Reg.TabIndex = 5;
             this.Reg.Text = "Registration";
-            this.Reg.UseVisualStyleBackColor = false;
+            this.Reg.UseVisualStyleBackColor = true;
             this.Reg.Click += new System.EventHandler(this.Reg_Click);
             // 
             // Enter
             // 
-            this.Enter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(199)))), ((int)(((byte)(63)))));
             this.Enter.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Enter.Location = new System.Drawing.Point(487, 348);
             this.Enter.Name = "Enter";
             this.Enter.Size = new System.Drawing.Size(78, 33);
             this.Enter.TabIndex = 6;
             this.Enter.Text = "Enter";
-            this.Enter.UseVisualStyleBackColor = false;
+            this.Enter.UseVisualStyleBackColor = true;
             this.Enter.Click += new System.EventHandler(this.Enter_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(579, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(668, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(106, 93);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -144,24 +140,14 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(199)))), ((int)(((byte)(63)))));
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(221, 297);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 25);
             this.button3.TabIndex = 10;
             this.button3.Text = "Generate capcha";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(97)))), ((int)(((byte)(181)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 387);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(803, 62);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // Авторизация
             // 
@@ -169,7 +155,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Capcha);
             this.Controls.Add(this.CapchaGen);
@@ -181,13 +166,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Авторизация";
             this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Авторизация_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapchaGen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +189,6 @@
         private System.Windows.Forms.PictureBox CapchaGen;
         private System.Windows.Forms.TextBox Capcha;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

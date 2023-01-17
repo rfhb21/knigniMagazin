@@ -55,6 +55,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="exzemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exzemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Books.Designer.cs">
+      <DependentUpon>Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\otch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\otch.Designer.cs">
+      <DependentUpon>otch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Model1.cs" />
     <Compile Include="Forms\Registration.cs">
       <SubType>Form</SubType>
@@ -79,6 +96,18 @@
     <Compile Include="Model\Пользователи.cs" />
     <Compile Include="Model\Продажи.cs" />
     <Compile Include="Model\Стеллаж.cs" />
+    <Compile Include="UserPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Books.resx">
+      <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\otch.resx">
+      <DependentUpon>otch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +123,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="exzemDataSet.xsc">
+      <DependentUpon>exzemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="exzemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>exzemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="exzemDataSet.xss">
+      <DependentUpon>exzemDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Model\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
